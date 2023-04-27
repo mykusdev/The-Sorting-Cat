@@ -1,0 +1,423 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/Raleway-Medium.woff") format("woff");
+    src: url("fonts/Raleway-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cinzel";
+    src: url("fonts/CinzelDecorative-Regular.woff") format("woff");
+    src: url("fonts/CinzelDecorative-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes glowyEffect{
+    0%, 100%{
+        text-shadow: none;
+    }
+    12.5%{
+        text-shadow:0 0 0.25em rgb(255, 234, 0), 0 0 0.5em rgb(255, 234, 0);
+    }
+    25%{
+        text-shadow: none;
+    }
+
+    37.5%{
+        text-shadow:0 0 0.25em rgb(255, 35, 35), 0 0 0.5em rgb(255, 35, 35);
+    }
+
+    50%{
+        text-shadow: none;
+    }
+
+    62.5%{
+        text-shadow:0 0 0.25em rgb(0, 255, 38), 0 0 0.5em rgb(0, 255, 38);
+    }
+
+    75%{
+        text-shadow: none;
+    }
+
+    87.5%{
+        text-shadow:0 0 0.25em rgb(0, 145, 255), 0 0 0.5em rgb(0, 145, 255);
+    }
+
+
+}
+
+
+*{
+    box-sizing: border-box;
+    color: rgb(212, 212, 212);
+    font-family: "Raleway";
+}
+
+html, body{
+    margin: 0px;
+}
+.main-nav{
+    background-color: rgba(0, 0, 0, 0.379);
+}
+.navi ul{
+    margin: 0px;
+}
+.navi li{
+    display: inline;
+}
+.navi a{
+    display: inline-block;
+    /* padding: 1em; */
+    padding: 1em 1vw 1em 1vw;
+    color: white;
+    text-decoration: none;
+    transition: 0.7s;
+    
+
+}
+.navi a:hover{
+    background-color: rgba(255, 255, 255, 0.156);
+}
+.main-nav{
+    text-align: center;
+    /* font-size: 1.2em; */
+    font-size: 3vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.482);
+    /* position: fixed;
+    width:max-content; */
+}
+.main-nav li{
+    padding: 0 5%;
+}
+.main-header{
+    background-color: rgba(0, 0, 0, 0.722);
+    background-image: url("images/cat cover.jpeg");
+    /* background-position-y: center; */
+    background-blend-mode:multiply;
+    background-size: cover;
+    padding-bottom: 20px;
+
+    /* background-position-y: -40vh; */
+    background-position-x: center;
+    background-attachment: fixed;
+    height: 90vh;
+}
+.main-header-commands{
+    height: 70vh;
+}
+/* .main-header-season{
+    background-color: rgba(0, 0, 0, 0.286);
+    background-image: url("images/cover3.jfif");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 20px;
+    background-position-y: center;
+    background-position-x: center;
+}*/
+.main-logo{
+    position: absolute;
+    /* margin: 0vh 40vw -10vh 40vw; */
+    /* margin-top: 30vh;
+    margin-left: 25vh; */
+    top: 40vh;
+    left: 10vw;
+    padding-bottom: 0;
+    /* padding-left: 15%;
+    padding-top: 10%; */
+    height: 15vw; 
+    border-radius: 50%;
+    float: left;
+}
+.main-logo-commands{
+    top: 25vh;
+}
+.main-heading{
+    color: white;
+    font-family: "Cinzel";
+    /* font-size: 4em; */
+    font-size: 5vw;
+    margin-top: 0;
+    padding-top: 15vh;
+    padding-left: 25%;
+    padding-right: 10%;
+    text-align: end;
+    font-weight: normal;
+
+
+}
+#light{
+    font-family: "Cinzel";
+    /* font-size: 2em; */
+    font-size: 10vw;
+    font-weight: normal;
+    color: white;
+    /* text-shadow: 0 0 0.5em white; */
+    /* animation-name: glowyEffect;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+
+    animation-name: glowyEffect;
+    animation-duration: 20s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+#commands{
+    font-family: "Cinzel";
+    font-size: 7vw;
+    font-weight: normal;
+    color: white;
+    animation-name: glowyEffect;
+    animation-duration: 20s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.normal-button{
+    background-color: rgba(0, 0, 0, 0.285);
+    padding: 2vh;
+    /* padding-left: 20vw;
+    padding-right: 20vw; */
+    padding: 0.5em 15vw 0.5em 15vw;
+
+    /* border: 1px solid white; */
+    border: 2px solid rgba(254,136,83,255);
+    border-radius: 10px;
+    margin: 0 5vw 20vh 40vw;
+
+    font-size: 2vw;
+    
+}
+.normal-button:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+
+    transition: 0.5s;
+    /* border: 1px solid rgba(254,136,83,255); */
+
+    
+}
+body{
+    background-image: url("images/sky-cover.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(21, 35, 46, 0.875);
+    background-blend-mode: multiply;
+
+}
+.body-season{
+    background-image: url("images/cover2.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(21, 35, 46, 0.875);
+    background-blend-mode: multiply;
+    background-position-x: center;
+
+}
+
+.content-section{
+    margin: 2em;
+}
+.container{
+    max-width: 900px;
+    font-size: 1.5em;
+    line-height: 170%;
+    margin: 0 0 auto 30px;
+    padding: 4em;
+}
+.section-header{
+    font-family: "Cinzel";
+    font-size: 2.2em;
+    /* font-size: 3vh; */
+    margin-top: 5%;
+    color: white;
+    margin-bottom: 5%;
+    font-weight: lighter;
+    line-height: 150%;
+}
+.black-bg{
+    background: rgba(0, 0, 0, 0.149);
+    background-blend-mode: multiply;
+    padding: 1vw 0 1vw 0;
+}
+.black-bg:hover{
+    background: rgba(0, 0, 0, 0.275);
+    transition: 0.5s;
+
+}
+.command-list{
+    list-style: none;
+}
+.command-list li{
+    padding: 1vh 1vw 1vh 0;
+}
+.command-list li .grey{
+    color: rgb(157, 157, 157);
+}
+.content-image-left{
+    width: 25vw;
+    float: left;
+    margin: 2%;
+    padding: 0;
+    margin-left: 0;
+    border-radius: 50%;
+
+}
+.content-image-right{
+    width: 30em;
+    float: none;
+    margin: 2%;
+    padding: 0;
+    border-radius: 2%;
+
+}
+.footer-logo{
+    height: 150px;
+    /* padding-left: 7%; */
+    left: 10vw;
+    border-radius: 50%;
+}
+.main-footer{
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0, 0, 0, 0.5) 60%);
+    /* background-color: rgba(0, 0, 0, 0.479); */
+    padding: .25em 0;
+
+}
+.main-footer-container{
+    display: flex;
+    align-items: center;
+    padding: 2% 5%;
+   
+}
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+.footer-nav li{
+    padding: 0 1em;
+}
+.footer-nav img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.season-block{
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.064);
+    max-width: 400px;
+    /* max-width: 30%; */
+    height: 500px;
+    border-radius: 15px;
+    
+}
+.season-block:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    /* background-color: rgba(255, 255, 255, 0.268); */
+    transition-duration: 1s;
+    
+}
+.season-block img{
+    align-self: center;
+    height: 20%;
+}
+
+.multicolour{
+    background: linear-gradient(to right, green, yellow, pink, orange, red);
+    -webkit-background-clip: text;
+  
+}
+
+
+
+@media (orientation: portrait){
+    .main-nav{
+        text-align: center;
+        /* font-size: 2.4em; */
+        font-size: 2vh;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.482);
+    }
+    .main-header{
+        
+        height: 60vh;
+        
+        background-position-y: -20vh;
+    }
+    .main-header-commands{
+        height: 55vh;
+    }
+    .main-logo{
+        /* padding-left: 10%; */
+       
+        height: 20vw;
+        top: 5vh;
+        left: 40vw;
+        position: relative;
+        float: none;
+
+        /* justify-items: center; */
+        
+        /* margin-left: 5vh; */
+    }
+    .main-heading{
+        
+        /* font-size: 6em; */
+        font-size: 5vh;
+        margin-top: 0;
+        padding-top: 5vh;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        font-weight: normal;
+    
+    }
+    .main-heading-commands{
+        padding-top: 10vh;
+    }
+    #light{
+        /* font-size: 2.5em; */
+        font-size: 10vh;
+
+    }
+    .button-anchor{
+        top: 20vh;
+    }
+    .normal-button{
+        width: 90vw;
+        font-size: 3vh;
+        padding: 1vh;
+        margin: 0 5vw 100vh 5vw;
+    }
+    .container{
+        max-width: fit-content;
+        /* line-height: 300%; */
+        line-height: 6vh;
+        padding-left: 2vw;
+        padding-right: 7vw;
+    }
+    .section-header{
+        /* font-size: 4em; */
+        font-size: 5vh;
+        /* margin-top: 10%; */
+        margin-top: 0vh;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .black-bg{
+        padding: 2vw;
+    }
+    .command-list{
+        line-height: 4vh;
+    }
+    .command-list li{
+        padding: 1vh 0 1vh 0;
+    }
+    .content-image{
+        width: 850px;
+        float: none;
+        margin: 3% 0;
+    }
+    .footer-nav img{
+        width: 80px;
+        height: 80px;
+    }
+}
